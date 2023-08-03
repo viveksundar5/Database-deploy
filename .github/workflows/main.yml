@@ -26,6 +26,9 @@ jobs:
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
           
+      - name: Reformat SQL Files
+        uses: credfeto/action-sql-format@v1.4.1
+          
       - name: Set up JDK 11
         uses: actions/setup-java@v1
         with:
