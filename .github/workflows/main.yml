@@ -13,7 +13,7 @@ env:
       
 jobs:
   build:
-    name: java ci sonar build
+    name: Database ci sonar build
     runs-on: ubuntu-latest
       
     steps:
@@ -51,3 +51,9 @@ jobs:
             -D sonar.projectKey=test-maven-project \
             -D sonar.host.url=$SONAR_HOST_URL \
             -D sonar.login=admin -D sonar.password=admin123 
+            
+      - name: Build project with Maven
+        run: mvn -B package --file pom.xml	 
+        
+      - name: Publish package
+        run: mvn --batch-mode deploy
