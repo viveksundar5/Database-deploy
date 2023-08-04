@@ -9,7 +9,7 @@ on:
 env:
   JAVA_VERSION: '17' 
   SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-  GITHUB_TOKEN: ${{ secrets.Workflow2_PAT_TOKEN_GITHUB }}
+  GITHUB_TOKEN: ${{ secrets.PAT_TOKEN}}
       
 jobs:
   build:
