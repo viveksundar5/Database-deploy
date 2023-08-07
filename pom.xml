@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>RAK.app</groupId>
-    <artifactId>Database-CI</artifactId>
+    <artifactId>java-maven-sonar-packages</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
